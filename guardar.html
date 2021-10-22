@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/guardar.js"></script>
+    <title>Guardar Departamento</title>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+
+        <div class="jumbotron">
+            <div id="alerta" class="alert alert-info alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Mensaje</strong> <p id="mensaje"></p>
+            </div>
+            <h1 class="text-center mb-5">Registro de Departamento</h1>
+            <label><strong> ID Departamento</strong></label>
+            <input type="text" id="id_dep" class="form-control mb-3">
+            <label><strong>Departamento</strong></label>
+            <input type="text" id="nomdep" class="form-control mb-3">
+            <label><strong>startDate</strong></label>
+            <input type="datetime-local" class="form-control mb-3" id="startDate">
+            <label><strong>endDate</strong></label>
+            <input type="datetime-local" class="form-control mb-3" id="endDate">
+            <div>
+                <button id="guardar" class="btn btn-primary btn-block">Guardar</button>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
