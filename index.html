@@ -23,22 +23,66 @@
 <body>
     <div class="container mt-5">
         <h1 class="text-center mb-5">Lista de Personas</h1>
-        <table class="table table-striped text-center">
-               <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Departamento</th> 
-                        <th>StartDate</th>
-                        <th>EndDate</th> 
-                        <th>Acción</th>   
-                    </tr>
+        <a href="guardar.html" class="mt-3">Nuevo Departamento</a>
+        <table class="table table-striped text-center mt-3">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Departamento</th>
+                    <th>StartDate</th>
+                    <th>EndDate</th>
+                    <th>Acción</th>
+                </tr>
 
-               </thead> 
-               <tbody id="tbody">                   
-              </tbody>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
         </table>
     </div>
 
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Ventana Actualizar</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div id="alerta" class="alert alert-info alert-dismissible fade show">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Mensaje</strong>
+                        <p id="mensaje"></p>
+                    </div>
+                    <h4 class="text-center mb-5">Actualizar Departamento</h4>
+                    <label><strong> ID Departamento</strong></label>
+                    <input type="text" id="id_dep" class="form-control mb-3" readonly>
+                    <label><strong>Departamento</strong></label>
+                    <input type="text" id="nomdep" class="form-control mb-3">
+                    <label><strong>startDate</strong></label>
+                    <input type="datetime-local" class="form-control mb-3" id="startDate">
+                    <label><strong>endDate</strong></label>
+                    <input type="datetime-local" class="form-control mb-3" id="endDate">
+                    <div>
+                        <button id="actualizar" class="btn btn-primary btn-block">Editar</button>
+                    </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 </body>
 
